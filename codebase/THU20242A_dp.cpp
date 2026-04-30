@@ -9,6 +9,10 @@ int pre=1,cur=0;
 constexpr ll INF=(1LL<<60);
 
 void roll(){
+    /*
+    * n个数组滚动,用n个变量来赋予语义
+    * 每次滚动+(n-1)后再%n,得到新的位置
+    */
     pre^=1;
     cur^=1;
 }
